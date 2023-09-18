@@ -6,8 +6,10 @@ import com.contentdata.dto.ErrorBO;
 import com.contentdata.dto.ResponseBO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 
 
+@Component
 public class GenericController {
 	
 	private static final String SUCCESS = String.valueOf(HttpStatus.OK.value());
