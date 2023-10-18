@@ -14,7 +14,7 @@ public class GenericController {
 	
 	private static final String SUCCESS = String.valueOf(HttpStatus.OK.value());
 	
-	protected <T> ResponseEntity<ResponseBO<T>> sendResponse(T t){
+	public <T> ResponseEntity<ResponseBO<T>> sendResponse(T t){
 		return new ResponseEntity<>(new ResponseBO<T>(t, null,SUCCESS),HttpStatus.OK);
 	}
 	

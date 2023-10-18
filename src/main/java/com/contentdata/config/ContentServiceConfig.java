@@ -25,7 +25,7 @@ import lombok.ToString;
 @RefreshScope
 @Data
 public class ContentServiceConfig {
-	 @Value("${content.msg}")
+	// @Value("${content.msg}")
 	 private String msg;
 	 private String buildVersion;
 }
