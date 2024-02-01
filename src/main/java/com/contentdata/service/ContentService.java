@@ -1,11 +1,18 @@
 package com.contentdata.service;
 
-import com.contentdata.dto.NewMovieList;
-import reactor.core.publisher.Flux;
+import org.springframework.core.io.Resource;
+import reactor.core.publisher.Mono;
+
+import java.util.List;
 
 public interface ContentService
 {
 
-      public NewMovieList getNewMovieList();
+      public List<Object> getNewMovieList();
+
+      public Mono<Resource> playmovie(String movieName);
+
+
+
 
 }
